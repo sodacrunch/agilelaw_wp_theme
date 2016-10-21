@@ -8,7 +8,7 @@
     <meta property="twitter:account_id" content="414268387" />
     <title>AgileLaw</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stylesheet.css" type="text/css">
+<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-select.css" type="text/css">
     <link rel="shortcut icon" href="img/favicon.ico" />
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
