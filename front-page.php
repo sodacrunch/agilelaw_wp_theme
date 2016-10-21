@@ -8,9 +8,9 @@
     <meta property="twitter:account_id" content="414268387" />
     <title>AgileLaw</title>
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap.min.css" type="text/css">
-<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stylesheet.css" type="text/css">
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/stylesheet.css" type="text/css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/bootstrap-select.css" type="text/css">
-    <link rel="shortcut icon" href="img/favicon.ico" />
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" />
     <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap.min.js" type="text/javascript"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/bootstrap-select.js" type="text/javascript"></script>
@@ -32,6 +32,8 @@
     </script>
     <!-- ClickTale end of Top part -->
     <script src="<?php echo get_template_directory_uri(); ?>/js/theme.js"  type="text/javascript"></script>
+    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/style.css" type="text/css">
+
 </head>
 
 <body>
@@ -63,7 +65,7 @@
           </div>
           <div class="col-xs-6">
             <div class="trial-left">
-              <img src="img/test-trial-logo.png" class="trial-logo">
+              <img src="<?php echo get_template_directory_uri(); ?>/img/test-trial-logo.png" class="trial-logo">
               <p class="trial-header">Try It Free For 30 Days</p>
 
               <div class="trial-wizard-container">
@@ -528,7 +530,7 @@
             <div class="trial-right">
             <p class="test-trial-header">You're in good company!</p>
             <p class="test-trial-subheader">More than 50 firms already rely on AgileLaw for reviewing, annotating and sharing document exhibits.</p>
-            <img src="img/test-trial-logos.png" class="test-trial-logos">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/test-trial-logos.png" class="test-trial-logos">
             <p class="test-trial-quote">“Despite using this new technology for the first time, the deposition was much smoother with AgileLaw than it would have been using paper exhibits.”</p>
             <p class="test-trial-author">Erika Birg</p>
             <p class="test-trial-position">Partner, Nelson Mullins</p>
@@ -546,7 +548,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-3">
-                    <img src="img/logo.png" class="logo">
+                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo">
                 </div>
                 <div class="col-xs-9 text-right">
                     <div class="menu-items-container">
@@ -580,7 +582,7 @@
         </div>
     </div>
     <div class="mobile-menu-container">
-        <img src="img/logo.png" class="mobile-logo">
+        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="mobile-logo">
         <i class="fa fa-2x fa-bars"></i>
         <div class="mobile-slide-menu">
             <a href="#agilelaw" class="mobile-menu-item">FEATURES</a>
@@ -617,8 +619,8 @@
                                     echo $site_post->post_content;
                                 ?>
             </p>
-            <img src="img/press.png" class="intro-press">
-            <img src="img/press-mobile.png" class="intro-press-mobile">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/press.png" class="intro-press">
+            <img src="<?php echo get_template_directory_uri(); ?>/img/press-mobile.png" class="intro-press-mobile">
         </div>
     </div>
 
@@ -640,7 +642,7 @@
                 <div class="agile-section agile-solution-section">
                   <div class="container-fluid">
                     <div class="cs-section-container">
-                        <img src="img/lappy-1.png" class="cs-ss">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/lappy-1.png" class="cs-ss">
                         <div>
                             <div class="ncircle">
                                 <p class="cs-num">1</p>
@@ -660,7 +662,7 @@
                         </p>
                     </div>
                     <div class="cs-section-container">
-                        <img src="img/lappy.png" class="cs-ss">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/lappy.png" class="cs-ss">
                         <div>
                             <div class="ncircle">
                                 <p class="cs-num">2</p>
@@ -680,7 +682,7 @@
                         </div>
                     </div>
                     <div class="cs-section-container">
-                        <img src="img/mobile.png" class="cs-ss cs-tablet">
+                        <img src="<?php echo get_template_directory_uri(); ?>/img/mobile.png" class="cs-ss cs-tablet">
                         <div>
                             <div class="ncircle">
                                 <p class="cs-num">3</p>
@@ -757,7 +759,7 @@
                                 echo $site_post->post_content;
                             ?>
                     </p>
-                    <a href="http://fast.wistia.net/embed/iframe/wj8yvhb2ga?videoWidth=960&videoHeight=540&controlsVisibleOnLoad=true&autoPlay=true&popover=true" data-featherlight-iframe-width="992px" data-featherlight-iframe-height="556px" data-featherlight="iframe" class="agile-vid-link"><img src="img/agile-1.png" class="agile-video"></a>
+                    <a href="http://fast.wistia.net/embed/iframe/wj8yvhb2ga?videoWidth=960&videoHeight=540&controlsVisibleOnLoad=true&autoPlay=true&popover=true" data-featherlight-iframe-width="992px" data-featherlight-iframe-height="556px" data-featherlight="iframe" class="agile-vid-link"><img src="<?php echo get_template_directory_uri(); ?>/img/agile-1.png" class="agile-video"></a>
                 </div>
                 </div>
                 <div class="agile-section agile-section-active agile-overview-section">
@@ -844,7 +846,7 @@
                                 <p class="disco-quote-title">Partner, Nelson Mullins</p>
                             </div>
                             <div class="col-xs-3">
-                                <img src="img/erika.png" class="disco-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/erika.png" class="disco-img">
                             </div>
                         </div>
                         <div class="disco-overview-sep"></div>
@@ -878,7 +880,7 @@
                                 <div class="quote-right"><a href="http://www.agilelaw.com/wp-content/uploads/Nelson-Mullins-Case-Study1.pdf" class="download-case">Download Case Study</a></div>
                             </div>
                             <div class="col-xs-4">
-                                <img src="img/erika.png" class="quote-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/erika.png" class="quote-img">
                             </div>
                         </div>
                         <div class="row">
@@ -898,7 +900,7 @@
                                 <div class="quote-right"><a href="http://www.agilelaw.com/wp-content/uploads/Fulkerson-Lotz-Case-Study1.pdf" class="download-case">Download Case Study</a></div>
                             </div>
                             <div class="col-xs-4">
-                                <img src="img/kimberly.png" class="quote-img">
+                                <img src="<?php echo get_template_directory_uri(); ?>/img/kimberly.png" class="quote-img">
                             </div>
                         </div>
                     </div>

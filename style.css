@@ -107,13 +107,13 @@ height: calc(100%);
 height: 485px;
 }
 .intro-col-1 {
-background-image: url("../img/e-exhibits.jpg");
+background-image: url("/img/e-exhibits.jpg");
 background-size: cover;
 padding: 0 !important;
 background-position: center;
 }
 .intro-col-2 {
-background-image: url("../img/col-2-bg.jpg");
+background-image: url("/img/col-2-bg.jpg");
 //background: #25C364;
 background-size: cover;
 padding: 0 !important;
@@ -123,7 +123,7 @@ transition: 200ms all;
 height: 400px;
 }
 .intro-col-3 {
-background-image: url("../img/col-3-bg.jpg");
+background-image: url("/img/col-3-bg.jpg");
 //background: #25C364;
 background-size: cover;
 padding: 0 !important;
@@ -670,21 +670,21 @@ color: white !important;
 background: #0073c3;
 }
 .splash-section-agilelaw {
-background-image: url("../img/e-exhibits.jpg");
+background-image: url("/img/e-exhibits.jpg");
 height: 450px;
 background-size: cover;
 background-position-y: -330px;
 }
 .splash-section-csdisco {
 background-position-y: -200px;
-background-image: url("../img/disco-reinvented.jpg");
+background-image: url("/img/disco-reinvented.jpg");
 height: 450px;
 background-size: cover;
 margin-bottom: 35px;
 }
 .splash-section-consulting {
 background-position-y: -200px;
-background-image: url("../img/col-3-bg.jpg");
+background-image: url("/img/col-3-bg.jpg");
 height: 450px;
 background-size: cover;
 margin-bottom: 35px;
@@ -1392,19 +1392,19 @@ font-size: 16px;
 margin-bottom: 10px;
 }
 .test-1 {
-background-image: url("../img/sec-1.png");
+background-image: url("/img/sec-1.png");
 }
 .test-2 {
-background-image: url("../img/sec-2.png");
+background-image: url("/img/sec-2.png");
 }
 .test-3 {
-background-image: url("../img/sec-3.png");
+background-image: url("/img/sec-3.png");
 }
 .test-4 {
-background-image: url("../img/sec-4.png");
+background-image: url("/img/sec-4.png");
 }
 .test-5 {
-background-image: url("../img/sec-5.png");
+background-image: url("/img/sec-5.png");
 }
 .test-video-block {
 height: 250px;
