@@ -15,6 +15,7 @@
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
         <link href='https://fonts.googleapis.com/css?family=Lato:400,100,300,100italic,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+        
 <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/blog_single.css" type="text/css">
 
         <script>
@@ -31,14 +32,14 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-xs-3">
-                        <img src="http://www.agilelaw.com/img/logo.png" class="logo">
+                    <a href="http://agilelaw.com"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo"></a>
                     </div>
                     <div class="col-xs-9 text-right">
                         <div class="menu-items-container">
-                            <a href="#agilelaw" class="menu-link menu-agilelaw jump-link">Product</a>
-                            <a href="#pricing" class="menu-link menu-pricing jump-link">Pricing</a>
-                            <a href="#blog" class="menu-link menu-blog jump-link">Blog</a>
-                            <a href="#contact" class="menu-link menu-contact jump-link">Contact</a>
+                            <a href="<?php echo get_site_url(); ?>/#agilelaw" class="menu-link menu-agilelaw jump-link">Product</a>
+                            <a href="<?php echo get_site_url(); ?>/#pricing" class="menu-link menu-pricing jump-link">Pricing</a>
+                            <a href="<?php echo get_site_url(); ?>/#blog" class="menu-link menu-blog jump-link">Blog</a>
+                            <a href="<?php echo get_site_url(); ?>/#contact" class="menu-link menu-contact jump-link">Contact</a>
                         </div>
                         <div class="menu-btns">
                             <p class="login-btn"><i class="fa fa-lock"></i> Login
@@ -66,13 +67,13 @@
         </div>
 
         <div class="mobile-menu-container">
-            <img src="http://www.agilelaw.com/img/logo.png" class="mobile-logo">
+                    <a href="http://agilelaw.com"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="mobile-logo"></a>
             <i class="fa fa-2x fa-bars"></i>
             <div class="mobile-slide-menu">
-                <a href="#agilelaw" class="mobile-menu-item">FEATURES</a>
-                <a href="#pricing" class="mobile-menu-item mobile-menu-item-alt">PRICING</a>
-                <a href="#blog" class="mobile-menu-item">BLOG</a>
-                <a href="#contact" class="mobile-menu-item mobile-menu-item-alt">CONTACT</a>
+                <a href="<?php echo get_site_url(); ?>/#agilelaw" class="mobile-menu-item">FEATURES</a>
+                <a href="<?php echo get_site_url(); ?>/#pricing" class="mobile-menu-item mobile-menu-item-alt">PRICING</a>
+                <a href="<?php echo get_site_url(); ?>/#blog" class="mobile-menu-item">BLOG</a>
+                <a href="<?php echo get_site_url(); ?>/#contact" class="mobile-menu-item mobile-menu-item-alt">CONTACT</a>
             </div>
         </div>
 
@@ -106,7 +107,7 @@ $cat_id = trim(substr($url, -2));
                         $args = array(
                                 'post_type' => 'post',
                                 'cat' => $cat_id,
-                                'posts_per_page' => 10,
+                                'posts_per_page' => 100,
                                 'paged' => ( get_query_var('paged') ? get_query_var('paged') : 1),
                                 );
                         $queryObject = new WP_Query($args);
@@ -178,20 +179,20 @@ $cat_id = trim(substr($url, -2));
             <div class="container">
                 <div class="row">
                     <div class="col-xs-8">
-                        <div class="footer-container">
-                            <p class="footer-title">Overview</p>
-                            <a href="http://www.agilelaw.com/#features" class="footer-agile-link" data-name="agile-solution-section">Solution</a>
-                            <a href="http://www.agilelaw.com/#features" class="footer-agile-link" data-name="agile-features-section">Features</a>
-                            <a href="http://www.agilelaw.com/#features" class="footer-agile-link" data-name="agile-security-section">Security</a>
-                            <a href="http://www.agilelaw.com/#features" class="footer-agile-link" data-name="agile-success-section">Success Stories</a>
-                            <a href="http://www.agilelaw.com/#features" class="footer-agile-link" data-name="agile-faq-section">FAQ</a>
-                        </div>
-                        <div class="footer-container">
-                            <p class="footer-title">Other</p>
-                            <a class="footer-link footer-pricing">Pricing</a>
-                            <a class="footer-link" href="http://www.agilelaw.com/blog">Blog</a>
-                            <a class="footer-link footer-contact">Contact</a>
-                        </div>
+                                <div class="footer-container">
+                                            <p class="footer-title">Overview</p>
+                                            <a href="<?php echo get_site_url(); ?>/#solution" class="footer-agile-link" data-name="agile-solution-section">Solution</a>
+                                            <a href="<?php echo get_site_url(); ?>/#features" class="footer-agile-link" data-name="agile-features-section">Features</a>
+                                            <a href="<?php echo get_site_url(); ?>/#security" class="footer-agile-link" data-name="agile-security-section">Security</a>
+                                            <a href="<?php echo get_site_url(); ?>/#success" class="footer-agile-link" data-name="agile-success-section">Success Stories</a>
+                                            <a href="<?php echo get_site_url(); ?>/#faq" class="footer-agile-link" data-name="agile-faq-section">FAQ</a>
+                                        </div>
+                                        <div class="footer-container">
+                                            <p class="footer-title">Other</p>
+                                            <a href="<?php echo get_site_url(); ?>/#pricing" class="footer-link footer-pricing">Pricing</a>
+                                            <a class="footer-link" href="<?php echo get_site_url(); ?>/blog">Blog</a>
+                                            <a href="<?php echo get_site_url(); ?>/#contact" class="footer-link footer-contact">Contact</a>
+                                        </div>
                         <div class="footer-container footer-social">
                             <p class="footer-title">Social</p>
                             <a href="http://www.agilelaw.com/#pricing" href="https://twitter.com/#!/agilelaw"><i class="fa fa-lg fa-twitter"></i></a>

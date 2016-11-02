@@ -1,27 +1,5 @@
    $(function() {
 
-          $('body').on('keypress', function(event) {
-            if (event.keyCode == 49) {
-                $("body").attr("style", "font-family: \'Open Sans\', sans-serif !important");
-            }
-            if (event.keyCode == 50) {
-                $("body").attr("style", "font-family: \'Roboto\', sans-serif !important");
-            }
-            if (event.keyCode == 51) {
-                $("body").attr("style", "font-family: \'Droid Serif\', serif !important");
-            }
-            if (event.keyCode == 52) {
-                $("body").attr("style", "font-family: \'Oxygen\', sans-serif !important");
-            }
-            if (event.keyCode == 53) {
-                $("body").attr("style", "font-family: \'Hind\', sans-serif !important");
-            }
-            if (event.keyCode == 54) {
-                $("body").attr("style", "font-family: \'Lato\', sans-serif !important");
-            }
-          });
-
-
             $(".mobile-menu-container .fa-bars").click(function() {
                 $(".mobile-slide-menu").slideToggle();
             });
@@ -116,7 +94,6 @@
                 }
             });
             $(".login-btn, .mobile-menu-login").click(function(e) {
-                console.log("ya");
                 e.stopPropagation();
                 $(".test").toggleClass("test-open");
                 $(".login-container").toggleClass("login-open");
@@ -128,7 +105,6 @@
             });
 
             $('.selectpicker').selectpicker();
-
 
             $(".agilelaw-section-container .menu-item").click(function() {
                 $(".agile-iframe").html('');
@@ -163,7 +139,6 @@
                 }
 
                 if (form_name == "" || form_phone == "" || form_firm == "") {
-                    console.log("error");
                     if (form_name == "") {
                         $(".form-name").addClass("form-error");
                     }
@@ -187,7 +162,7 @@
 
 
             $(".footer-agile-link").click(function() {
-                $(".agilelaw-section-container .menu-item").removeClass("active");
+                $(".agilelaw-menu .menu-item").removeClass("active");
                 var section = $(this).data("name");
                 $("p[data-name='" + section + "']").addClass("active");
                 $(".agile-section").hide();
@@ -197,15 +172,12 @@
                     scrollTop: $('#agilelaw').position().top - menu_margin
                 }, 1000);
             });
+
             $(".footer-disco-link").click(function() {
                 $(".cs-disco-container .menu-item").removeClass("active");
                 var section = $(this).data("name");
-
                 $("p[data-name='" + section + "']").addClass("active");
-
                 $("." + section).addClass("cs-section-active").show();
-
-
                 $(".cs-section").hide();
                 $(".cs-section").removeClass("cs-section-active");
                 $("." + section).addClass("cs-section-active").show();
@@ -236,7 +208,6 @@
             press_container_h = $(".press-container").outerHeight();
             window_h = $(window).height();
             window_w = $(window).width();
-            console.log("initial width: " + window_w);
             intro_h = (window_h - (menu_container_h + press_container_h));
             if (intro_h < 510) {
                 intro_h = 510;
@@ -271,21 +242,35 @@
 
             });
 
-
             if (window.location.href.indexOf("#features") > -1) {
-                $(".menu-agilelaw").trigger("click");
+                $("a[data-name='agile-features-section']").trigger("click");
             }
-
             if (window.location.href.indexOf("#pricing") > -1) {
                 $(".menu-pricing").trigger("click");
             }
-
             if (window.location.href.indexOf("#blog") > -1) {
                 $(".menu-blog").trigger("click");
             }
-
             if (window.location.href.indexOf("#contact") > -1) {
                 $(".menu-contact").trigger("click");
+            }
+            if (window.location.href.indexOf("#faq") > -1) {
+                $("a[data-name='agile-faq-section']").trigger("click");
+            }
+            if (window.location.href.indexOf("#solution") > -1) {
+                $("a[data-name='agile-solution-section']").trigger("click");
+            }
+            if (window.location.href.indexOf("#security") > -1) {
+                $("a[data-name='agile-security-section']").trigger("click");
+            }
+            if (window.location.href.indexOf("#success") > -1) {
+                $("a[data-name='agile-success-section']").trigger("click");
+            }
+            if (window.location.href.indexOf("#contact") > -1) {
+                $("a .menu-contact").trigger("click");
+            }
+            if (window.location.href.indexOf("#pricing") > -1) {
+                $("a .menu-pricing").trigger("click");
             }
 
             $(".trial-btn-start").click(function(){

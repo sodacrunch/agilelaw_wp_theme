@@ -548,7 +548,7 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-3">
-                    <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo">
+                    <a href="http://agilelaw.com"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="logo"></a>
                 </div>
                 <div class="col-xs-9 text-right">
                     <div class="menu-items-container">
@@ -582,7 +582,7 @@
         </div>
     </div>
     <div class="mobile-menu-container">
-        <img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="mobile-logo">
+                    <a href="http://agilelaw.com"><img src="<?php echo get_template_directory_uri(); ?>/img/logo.png" class="mobile-logo"></a>
         <i class="fa fa-2x fa-bars"></i>
         <div class="mobile-slide-menu">
             <a href="#agilelaw" class="mobile-menu-item">FEATURES</a>
