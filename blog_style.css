@@ -312,11 +312,6 @@
                 margin-left: 20px;
             }
 
-            .footer .col-xs-8,
-            .footer .col-xs-4 {
-                width: 50% !important;
-            }
-
             .footer-social {
                 margin: 0;
             }
@@ -389,6 +384,11 @@
             }
 
             @media (max-width: 768px) {
+
+            .footer .col-xs-8,
+            .footer .col-xs-4 {
+                width: 50% !important;
+            }
                 .blog-page .col-xs-6 {
                     width: 100% !important;
                 }

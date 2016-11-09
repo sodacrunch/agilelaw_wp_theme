@@ -5,6 +5,14 @@ background: #efefef !important;
 html {
 margin: 0 !important;
 }
+
+img.alignright { float: right; margin: 0 0 1em 1em; }
+img.alignleft { float: left; margin: 0 1em 1em 0; }
+img.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+.alignright { float: right; }
+.alignleft { float: left; }
+.aligncenter { display: block; margin-left: auto; margin-right: auto; }
+
 .fa-angle-double-right {
 color: black !important;
 }
@@ -269,10 +277,7 @@ padding: 0;
 .form-interest {
 margin-left: 20px;
 }
-.footer .col-xs-8,
-.footer .col-xs-4 {
-width: 50% !important;
-}
+
 .footer-social {
 margin: 0;
 }
@@ -552,6 +557,11 @@ margin: 10px;
 }
 @media (max-width: 768px) {
 
+.footer .col-xs-8,
+.footer .col-xs-4 {
+width: 50% !important;
+}
+
 .blog-content img {
 	width: 100%;
 	padding-bottom: 10px;
@@ -671,3 +681,5 @@ display: none;
 #searchsubmit:hover, #respond .submit:hover {
 background: #26a65b !important;
 }
+
+
